@@ -46,7 +46,11 @@ class PhoneAssignments():
 
     def add_employee(self, employee):
         # TODO throw exception if two employees with same ID are added
-        self.employees.append(employee)
+        try:
+            assert employee.id in self.employees
+            self.employees.append(employee)
+        except AssertionError as e:
+            print("Employee id already exist")
 
 
     def add_phone(self, phone):
