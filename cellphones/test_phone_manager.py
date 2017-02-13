@@ -31,6 +31,8 @@ class TestPhoneManager(unittest.TestCase):
     #     with self.assertRaises(PhoneError):
     #         testAssignmentMgr.add_phone(testPhone2)
 
+    #This is the test I wrote. The add_employees method doesn't return a list so I put the employees in a seperate list in order to test if they are present
+    #Can you point me in the right direction?
 
     def test_create_and_add_new_employee(self):
         # TODO write this test and then remove the self.fail() statement
